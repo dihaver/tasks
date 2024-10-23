@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: 'San Francisco', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, #0056b3, #ADD8E6);
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 40px 40px;
+    border: 1px solid #000000;
+    margin: 20px;
+    width: 400px;
+}
+
+.task-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.task-list li {
+    background-color: #ADD8E6;
+    border-radius: 20px;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 0.5px solid black;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.task-list li:hover {
+    background-color: #87CEEB;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.task-list li:active {
+    background-color: #6495ED;
+    transform: translateY(1px);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.task-list li h4 {
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'San Francisco';
+    src: url('fonts/SF-Pro-Display-Regular.woff2') format('woff2'),
+        url('fonts/SF-Pro-Display-Regular.woff') format('woff'),
+        url('fonts/SF-Pro-Display-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
